@@ -86,7 +86,7 @@ def dzen_on():
     global DZEN_PROCESS
     dzen_off()
     if DZEN_MSG is not None:
-        DZEN_PROCESS = subprocess.Popen('dzen2 -w 300 -p -l 50 -e "onstart=uncollapse,unhide,scrollhome;button4=scrollup;button5=scrolldown"', shell=True, stdin=subprocess.PIPE)
+        DZEN_PROCESS = subprocess.Popen('dzen2 -w 300 -p -l 70 -e "onstart=uncollapse,unhide,scrollhome;button4=scrollup;button5=scrolldown"', shell=True, stdin=subprocess.PIPE)
         DZEN_PROCESS.stdin.write(DZEN_MSG)
         DZEN_PROCESS.stdin.flush()
 
